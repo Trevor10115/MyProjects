@@ -28,6 +28,8 @@ public class Main
 	     System.out.println(Min_Max.Max(file_1) + " Max value");// prints max value
 	     System.out.println("Hello World!"); 
 	     System.out.println("Hello World!"); 
+	     System.out.println("Hello World!");
+	     
 	}
 }
 	
