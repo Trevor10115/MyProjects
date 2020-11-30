@@ -9,11 +9,27 @@ public class Main {
 	public static void main(String[] args) throws Exception
 	{
 		
-		
-		for(int i = 0; i < FileMng.words.length; i++)
+		Scanner scanner = new Scanner (new File("words.txt"));
+		String[] file_1 = new String [5];
+		int i =0;
+		while(scanner.hasNextLine())
 		{
-			System.out.println(FileMng.words[i]);//prints contents of array 
+			file_1[i++] = scanner.nextLine();//inputs contents into array file_1
 		}
+		
+		
+		for(int z = 0; z < file_1.length; z++)
+		{
+			System.out.println(file_1[z]);//prints contents of array 
+		}
+		
+		System.out.println(spellChecks.Checks(file_1));
+		
+		
+		
+		
+		
+		
 	}
-	
+
 }
